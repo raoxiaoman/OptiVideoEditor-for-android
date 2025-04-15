@@ -25,11 +25,13 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Rect;
-import android.support.annotation.NonNull;
-import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
+
+import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
+
 import com.obs.marveleditor.R;
 import com.obs.marveleditor.interfaces.OptiOnRangeSeekBarChangeListener;
 
@@ -360,8 +362,9 @@ public class OptiCustomRangeSeekBar extends View {
     }
 
     private void onCreate(OptiCustomRangeSeekBar CustomRangeSeekBar, int index, float value) {
-        if (mListeners == null)
+        if (mListeners == null) {
             return;
+        }
 
         for (OptiOnRangeSeekBarChangeListener item : mListeners) {
             item.onCreate(CustomRangeSeekBar, index, value);
@@ -369,8 +372,9 @@ public class OptiCustomRangeSeekBar extends View {
     }
 
     private void onSeek(OptiCustomRangeSeekBar CustomRangeSeekBar, int index, float value) {
-        if (mListeners == null)
+        if (mListeners == null) {
             return;
+        }
 
         for (OptiOnRangeSeekBarChangeListener item : mListeners) {
             item.onSeek(CustomRangeSeekBar, index, value);
@@ -378,8 +382,9 @@ public class OptiCustomRangeSeekBar extends View {
     }
 
     private void onSeekStart(OptiCustomRangeSeekBar CustomRangeSeekBar, int index, float value) {
-        if (mListeners == null)
+        if (mListeners == null) {
             return;
+        }
 
         for (OptiOnRangeSeekBarChangeListener item : mListeners) {
             item.onSeekStart(CustomRangeSeekBar, index, value);
@@ -387,8 +392,9 @@ public class OptiCustomRangeSeekBar extends View {
     }
 
     private void onSeekStop(OptiCustomRangeSeekBar CustomRangeSeekBar, int index, float value) {
-        if (mListeners == null)
+        if (mListeners == null) {
             return;
+        }
 
         for (OptiOnRangeSeekBarChangeListener item : mListeners) {
             item.onSeekStop(CustomRangeSeekBar, index, value);

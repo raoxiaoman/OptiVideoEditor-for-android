@@ -47,7 +47,7 @@
             app:layout_constraintTop_toBottomOf="@+id/iv_done"
             android:inputType="text"/>
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.appcompat.app.widget.RecyclerView
             android:id="@+id/rvPosition"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_60sdp"

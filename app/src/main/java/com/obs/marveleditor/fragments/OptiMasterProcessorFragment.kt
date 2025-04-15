@@ -23,18 +23,17 @@ import android.os.Environment
 import android.os.Handler
 import android.provider.MediaStore
 import android.provider.Settings
-import android.support.design.widget.BottomSheetDialogFragment
-import android.support.v4.app.ActivityCompat
-import android.support.v4.app.Fragment
-import android.support.v4.content.ContextCompat
-import android.support.v4.content.FileProvider
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
+import androidx.core.content.FileProvider
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.github.hiteshsondhi88.libffmpeg.FFmpeg
 import com.github.hiteshsondhi88.libffmpeg.FFmpegLoadBinaryResponseHandler
 import com.github.hiteshsondhi88.libffmpeg.exceptions.FFmpegNotSupportedException
@@ -44,6 +43,7 @@ import com.google.android.exoplayer2.trackselection.DefaultTrackSelector
 import com.google.android.exoplayer2.trackselection.TrackSelectionArray
 import com.google.android.exoplayer2.ui.PlayerView
 import com.google.android.exoplayer2.util.Util
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.obs.marveleditor.OptiVideoEditor
 import com.obs.marveleditor.utils.OptiCommonMethods
 import com.obs.marveleditor.utils.OptiConstant
@@ -190,7 +190,7 @@ class OptiMasterProcessorFragment : Fragment(), OptiBaseCreatorDialogFragment.Ca
         }
     }
 
-    override fun onConfigurationChanged(newConfig: Configuration?) {
+    override fun onConfigurationChanged(newConfig: Configuration) {
         super.onConfigurationChanged(newConfig)
         //for playing video in landscape mode
         if (newConfig!!.orientation == Configuration.ORIENTATION_LANDSCAPE) {
@@ -629,7 +629,7 @@ class OptiMasterProcessorFragment : Fragment(), OptiBaseCreatorDialogFragment.Ca
         }
     }
 
-    private val playerListener = object : Player.EventListener {
+    private val playerListener = object : Player.Listener {
         override fun onPlaybackParametersChanged(playbackParameters: PlaybackParameters?) {
         }
 

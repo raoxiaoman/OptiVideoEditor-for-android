@@ -32,7 +32,7 @@
                 android:textColor="@color/line_color"
                 android:textSize="@dimen/textLarge"/>
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.app.widget.AppCompatImageView
                 android:id="@+id/acivClose"
                 android:layout_width="@dimen/_18sdp"
                 android:layout_height="@dimen/_18sdp"
@@ -74,7 +74,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/ivRadio"/>
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.app.widget.AppCompatImageView
                 android:id="@+id/ivRadio"
                 android:layout_width="@dimen/_24sdp"
                 android:layout_height="@dimen/_24sdp"
@@ -125,14 +125,14 @@
             android:layout_marginEnd="@dimen/_5sdp"
             android:weightSum="2">
 
-        <android.support.v7.widget.AppCompatTextView
+        <androidx.appcompat.app.widget.AppCompatTextView
                 android:id="@+id/actvStartTime"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="start|center_vertical"/>
 
-        <android.support.v7.widget.AppCompatTextView
+        <androidx.appcompat.app.widget.AppCompatTextView
                 android:id="@+id/actvEndTime"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -144,7 +144,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-        <android.support.v7.widget.AppCompatButton
+        <androidx.appcompat.app.widget.AppCompatButton
                 android:id="@+id/acbCrop"
                 android:layout_width="@dimen/_100sdp"
                 android:layout_height="@dimen/_45sdp"
@@ -176,7 +176,7 @@
                     android:layout_height="wrap_content"
                     android:indeterminate="true"/>
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.app.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"

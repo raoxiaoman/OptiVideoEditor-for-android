@@ -72,7 +72,7 @@
                     android:layout_marginTop="@dimen/_25sdp"
                     style="?android:attr/progressBarStyleHorizontal"/>
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.app.widget.AppCompatTextView
                     android:id="@+id/tvVideoProcessing"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -84,7 +84,7 @@
 
         </LinearLayout>
 
-        <android.support.v7.widget.RecyclerView
+        <androidx.appcompat.app.widget.RecyclerView
                 android:id="@+id/rvVideoOptions"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_60sdp"

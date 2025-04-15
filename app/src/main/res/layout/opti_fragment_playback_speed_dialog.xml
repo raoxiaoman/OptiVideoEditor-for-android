@@ -35,7 +35,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:contentDescription="@string/app_name"/>
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.appcompat.app.widget.RecyclerView
             android:id="@+id/rvPlaybackSpeed"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_130sdp"

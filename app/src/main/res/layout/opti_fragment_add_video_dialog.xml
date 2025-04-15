@@ -31,7 +31,7 @@
                 android:textColor="@color/line_color"
                 android:textSize="@dimen/textLarge"/>
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.app.widget.AppCompatImageView
                 android:id="@+id/acivClose"
                 android:layout_width="@dimen/_18sdp"
                 android:layout_height="@dimen/_18sdp"
